@@ -1,0 +1,22 @@
+
+.about{margin-top:0px;}
+
+.float-btn{font-size: 20px;}
+
+nav{position: fixed; padding: 2%; display: flex; flex-direction: row; justify-content: space-around;}
+
+.mission-statement{margin-top: 200px;}
+
+.card-body{overflow: hidden; box-shadow: 0px 2px 10px grey; width: 70%; margin: auto; padding: 20px; border-radius: 10px;}
+.card-body:hover{background-color: rgb(192, 184, 184); color: black;}
+body{background-image: url('/images/conference\ b.jpg');}
+
+footer{display: flex;}
+.footer-bottom{ padding: 3%; }
+
+.nav-logo{width: 2%; margin-left: 25%;}
+
+.contact-elements{width: 60%; height: fit-content;}
+
+.testimonials-container{display: flex; flex-direction: row; justify-content: space-between;}
+.t-cards{width: 31%; padding: 1%;}
