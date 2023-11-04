@@ -1,17 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+let navbarEl = document.getElementById('nav-bar')
+let headerNavEl = document.getElementById('header-nav')
+let btnTopNav = document.getElementById('btn-top-nav')
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+console.log('nav bar')
+console.log(navbarEl)
+
+console.log('header nav')
+console.log(headerNavEl)
+
+window.onscroll = () =>{
+console.log(window.scrollY)
+if(window.scrollY > 280){
+  navbarEl.style.display = 'none';
+  headerNavEl.style.cssText = 'position:fixed; margin-top:0px;'
+headerNavEl.classList.add('fix-header-nav')
+btnTopNav.style.display = 'block'
+}else{
+  navbarEl.style.display = 'flex'
+  headerNavEl.style.cssText = 'position:relative; margin-top:100px'
+  headerNavEl.classList.remove('fix-header-nav')
+  btnTopNav.style.display = 'none'
+}
+
+}
